@@ -10,3 +10,34 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, custom-background, custom-logo, custom-menu, featured-images, translation-ready
 Text Domain: ekomart-wp
 */
+
+
+.navigation.pagination {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.navigation.pagination .nav-links a, .navigation.pagination .nav-links span.current {
+  color: #2C3C28;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  line-height: 45px;
+  border-radius: 6px;
+  font-weight: 700;
+  border: 1px solid #E2E2E2;
+  transition: .3s;
+}
+.navigation.pagination .nav-links a:hover{
+    background-color: #629d23;
+  color: #fff;
+}
+.navigation.pagination .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navigation.pagination .nav-links span.current {
+  background-color: #629d23;
+  color: #fff;
+}

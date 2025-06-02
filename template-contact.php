@@ -26,14 +26,7 @@ get_header();
             <div class="row">
                 <div class="col-lg-5">
                     <div class="contact-left-area-main-wrapper">
-                        <div class="location-single-card">
-                            <div class="icon">
-                                <i class="fa-light fa-location-dot"></i>
-                            </div>
-                            <div class="information">
-                                <h3 class="title">Berlin Germany Store <br><br>259 Daniel Road, FKT 2589 Berlin, Germany.</h3>
-                            </div>
-                        </div>
+                        
                         <div class="location-single-card">
                             <div class="icon">
                                 <i class="fa-solid fa-phone"></i>
