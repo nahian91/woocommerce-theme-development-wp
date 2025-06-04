@@ -6,7 +6,8 @@ if (!defined('ABSPATH')) {
 
 // Theme Setup
 function ekomart_setup() {
-    // Add support for dynamic title tag
+    add_theme_support('woocommerce');
+
     add_theme_support('title-tag');
 
     // Add support for post thumbnails
@@ -48,3 +49,13 @@ function ekomart_enqueue_scripts() {
     wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', ['jquery'], false, true);
 }
 add_action('wp_enqueue_scripts', 'ekomart_enqueue_scripts');
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
+
+remove_action( 'woocommerce_shop_loop_header', 'woocommerce_product_taxonomy_archive_header', 10 );
+
+add_action( 'init', function() {
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+});
+

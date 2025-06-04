@@ -7,123 +7,7 @@ get_header();
 
 ?>
 
-    <div class="banner-swiper-main-wrapper" >
-        <div class="swiper mySwiper-category-1 swiper-data" data-swiper='{
-            "spaceBetween":0,
-            "slidesPerView":1,
-            "loop": true,
-            "speed": 700,
-            "effect": "fade",
-            "navigation":{
-                "nextEl":".swiper-button-next",
-                "prevEl":".swiper-button-prev"
-              },
-            "breakpoints":{
-            "0":{
-                "slidesPerView":1,
-                "spaceBetween": 0},
-            "320":{
-                "slidesPerView":1,
-                "spaceBetween":0},
-            "480":{
-                "slidesPerView":1,
-                "spaceBetween":0},
-            "640":{
-                "slidesPerView":1,
-                "spaceBetween":0},
-            "840":{
-                "slidesPerView":1,
-                "spaceBetween":0},
-            "1140":{
-                "slidesPerView":1,
-                "spaceBetween":0},
-            "1540":{
-                "slidesPerView":1,
-                "spaceBetween":0},
-            "1840":{
-                "slidesPerView":1,
-                "spaceBetween":0}
-            }
-        }'>
-            <div class="swiper-wrapper swiper-button-between">
-                <!-- single swiper start -->
-                <div class="swiper-slide">
-                    <!-- rts banner area start -->
-                    <div class="section-gap banner-area banner-bg-full">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="banner-inner-content-three">
-                                        <span class="pre">
-                                            Get up to 30% off on your first $150 purchase
-                                        </span>
-                                        <h1 class="title">
-                                            Don’t miss our amazing <br>
-                                            grocery deals
-                                        </h1>
-                                        <p class="dsicription">
-                                            We have prepared special discounts for you on grocery products. Don't miss these opportunities...
-                                        </p>
-                                        <a href="#" class="main-btn btn-primary radious-sm with-icon">
-                                            <div class="btn-text">
-                                                Shop Now
-                                            </div>
-                                            <div class="arrow-icon">
-                                                <i class="fa-light fa-arrow-right"></i>
-                                            </div>
-                                            <div class="arrow-icon">
-                                                <i class="fa-light fa-arrow-right"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- rts banner area end -->
-                </div>
-                <!-- single swiper start -->
-                <!-- single swiper start -->
-                <div class="swiper-slide">
-                    <!-- rts banner area start -->
-                    <div class="section-gap banner-area img-two banner-bg-full">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="banner-inner-content-three">
-                                        <span class="pre">
-                                            Get up to 10% off on your first $250 purchase
-                                        </span>
-                                        <h1 class="title">
-                                            Check out our incredible <br> deals today
-                                        </h1>
-                                        <p class="dsicription">
-                                            We have prepared special discounts for you on grocery products. Don't miss these opportunities...
-                                        </p>
-                                        <a href="#" class="main-btn btn-primary radious-sm with-icon">
-                                            <div class="btn-text">
-                                                Shop Now
-                                            </div>
-                                            <div class="arrow-icon">
-                                                <i class="fa-light fa-arrow-right"></i>
-                                            </div>
-                                            <div class="arrow-icon">
-                                                <i class="fa-light fa-arrow-right"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- rts banner area end -->
-                </div>
-                <!-- single swiper start -->
-                 <button class="swiper-button-next"><i class="fa-regular fa-arrow-right"></i></button>
-                 <button class="swiper-button-prev"><i class="fa-regular fa-arrow-left"></i></button>
-            </div>
-        </div>
-    </div>
+    
     
     <!-- rts categorya area start -->
     <div class="category-area section-gapTop">
@@ -300,24 +184,7 @@ get_header();
         <div class="container">
             <div class="row g-24">
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="single-feature-card ssthree style-three bg-image one">
-                        <div class="content-area">
-                            <a href="shop-grid-top-filter.php" class="main-btn btn-primary">Weekend Discount</a>
-                            <h3 class="title">
-                                Drink Fresh Corn Juice <br>
-                                <span>Good Taste</span>
-                            </h3>
-                            <a href="#" class="shop-now-goshop-btn">
-                                <span class="text">Shop Now</span>
-                                <div class="plus-icon">
-                                    <i class="fa-sharp fa-regular fa-plus"></i>
-                                </div>
-                                <div class="plus-icon">
-                                    <i class="fa-sharp fa-regular fa-plus"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="single-feature-card ssthree style-three bg-image two">
@@ -2276,106 +2143,7 @@ get_header();
             <div class="row g-4">
                 <div class="col-lg-3">
                     <!-- single four feature -->
-                    <div class="feature-product-list-wrapper">
-                        <div class="title-area">
-                            <h2 class="title">
-                                Recently Added
-                            </h2>
-                        </div>
-                        <div class="single-product-list">
-                            <a href="shop-details.php" class="thumbnail">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/images/grocery/01.jpg" alt="product">
-                            </a>
-                            <div class="body-content">
-                                <div class="top">
-                                    <div class="stars-area">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <a href="shop-details.php">
-                                        <h4 class="title">Pastine Mellin Filid Angelo 100% Di Grano Tenero</h4>
-                                    </a>
-                                    <div class="price-area">
-                                        <span class="current">$36.00</span>
-                                        <div class="previous">$36.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-product-list">
-                            <a href="shop-details.php" class="thumbnail">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/images/grocery/02.jpg" alt="product">
-                            </a>
-                            <div class="body-content">
-                                <div class="top">
-                                    <div class="stars-area">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <a href="shop-details.php">
-                                        <h4 class="title">Lay's Potato Chips, Sweet Southern Heat ...</h4>
-                                    </a>
-                                    <div class="price-area">
-                                        <span class="current">$36.00</span>
-                                        <div class="previous">$36.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-product-list">
-                            <a href="shop-details.php" class="thumbnail">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/images/grocery/03.jpg" alt="product">
-                            </a>
-                            <div class="body-content">
-                                <div class="top">
-                                    <div class="stars-area">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <a href="shop-details.php">
-                                        <h4 class="title">Hillshire Farm Sliced Honey
-                                            Deli Lunch Meat</h4>
-                                    </a>
-                                    <div class="price-area">
-                                        <span class="current">$36.00</span>
-                                        <div class="previous">$36.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-product-list">
-                            <a href="shop-details.php" class="thumbnail">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/images/grocery/04.jpg" alt="product">
-                            </a>
-                            <div class="body-content">
-                                <div class="top">
-                                    <div class="stars-area">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <a href="shop-details.php">
-                                        <h4 class="title">Pastine Mellin Filid Angelo 100% Di Grano Tenero</h4>
-                                    </a>
-                                    <div class="price-area">
-                                        <span class="current">$36.00</span>
-                                        <div class="previous">$36.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                    
+                                        
                     <!-- single four feature end -->
                 </div>
                 <div class="col-lg-3">
@@ -2709,38 +2477,7 @@ get_header();
             <div class="row g-24">
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                     <!-- single blog area start -->
-                    <div class="single-blog-area-start style-two">
-                        <a href="#" class="thumbnail">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/images/blog/01.jpg" alt="blog-area">
-                        </a>
-                        <div class="blog-body">
-                            <div class="top-area">
-                                <div class="single-meta">
-                                    <i class="fa-light fa-clock"></i>
-                                    <span>15 Sep, 2023</span>
-                                </div>
-                                <div class="single-meta">
-                                    <i class="fa-regular fa-folder"></i>
-                                    <span>Modern Fashion</span>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <h4 class="title">
-                                    Fashion Fixation: Fueling Your Passion
-                                    for All Things Stylish
-                                </h4>
-                            </a>
-                            <a href="#" class="shop-now-goshop-btn">
-                                <span class="text">Read Details</span>
-                                <div class="plus-icon">
-                                    <i class="fa-sharp fa-regular fa-plus"></i>
-                                </div>
-                                <div class="plus-icon">
-                                    <i class="fa-sharp fa-regular fa-plus"></i>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    
                     <!-- single blog area end -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">

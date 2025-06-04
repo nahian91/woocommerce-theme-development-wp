@@ -13105,3 +13105,39 @@ header.header-three .sub-dropdown .sub-menu.third-lvl.base {
 .pl--60 {
 	padding-left: 60px;
 }
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+	content: 'next';
+	text-indent: -99999px;
+}
+.swiper-button-next::before, .swiper-rtl .swiper-button-prev::before {
+	content: 'next';
+	text-indent: -99999px;
+}
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+	content: 'prev';
+  text-indent: -99999px;
+}
+.single-shopping-card-one .cart-counter-action .quantity-edit {
+	width: 95px;
+	display: flex;
+	align-items: center;
+	border: 1px solid rgba(43, 66, 38, 0.12);
+	border-radius: 4px;
+	padding: 3px 10px;
+	justify-content: space-between;
+	background: #fff;
+	box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.04);
+}
+
+.cart-counter-action form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.cart-counter-action form .quantity-edit input {
+  max-width: 46px;
+}
+.single-shopping-card-one .cart-counter-action .quantity-edit input, .quantity-edit input {
+  max-width: 70px;
+  -moz-appearance: textfield;
+}

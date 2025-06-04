@@ -6,7 +6,6 @@
     swiperActivation();
     cartNumberIncDec();
     filter();
-    niceSelect();
     sideMenu();
 
     // Optional calls – check if defined before calling
@@ -102,10 +101,6 @@
       $(show).removeClass("hide").siblings().addClass("hide");
       $(this).addClass('active').siblings().removeClass('active');
     });
-  }
-
-  function niceSelect() {
-    $('select').niceSelect(); // Plugin must already be included
   }
 
   function sideMenu() {
