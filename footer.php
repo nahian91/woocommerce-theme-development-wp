@@ -1,3 +1,16 @@
+<?php 
+    global $redux_demo; 
+    $footer_top = $redux_demo['footer-top'];
+
+    foreach($footer_top as $item) {
+        //print_r($item);
+    }
+?>
+
+<pre>
+    
+</pre>
+
 <div class="rts-shorts-service-area section-gap bg_primary">
         <div class="container">
             <div class="row g-5">
