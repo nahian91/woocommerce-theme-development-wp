@@ -47,7 +47,6 @@ do_action( 'woocommerce_before_checkout_form', $checkout );
                 <?php if ( $checkout->get_checkout_fields() ) : ?>
 
                 <?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
-
                 <div class="col2-set" id="customer_details">
                     <div class="col-1">
                         <?php do_action( 'woocommerce_checkout_billing' ); ?>

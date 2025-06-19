@@ -6,6 +6,10 @@ if (!defined('ABSPATH')) {
 
 // Redux Famework
 require_once get_template_directory() . '/inc/theme-options.php';
+require_once get_template_directory() . '/inc/widgets/categories.php';
+require_once get_template_directory() . '/inc/widgets/latest-posts.php';
+require_once get_template_directory() . '/inc/widgets/tags.php';
+require_once get_template_directory() . '/inc/widgets/search.php';
 
 // Theme Setup
 function ekomart_setup() {
@@ -52,6 +56,82 @@ function ekomart_enqueue_scripts() {
     wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', ['jquery'], false, true);
 }
 add_action('wp_enqueue_scripts', 'ekomart_enqueue_scripts');
+
+
+add_filter( 'loop_shop_per_page', function( $cols ) {
+    return 12; // Set to 12 products per page
+}, 20 );
+
+
+function ekomart_register_sidebar() {
+    register_sidebar( array(
+        'name'          => esc_html__( 'Main Sidebar', 'your-textdomain' ),
+        'id'            => 'main-sidebar',
+        'description'   => esc_html__( 'Widgets in this area will be shown on the main sidebar.', 'your-textdomain' ),
+        'before_widget' => '<div id="%1$s" class="widget blog-sidebar-single-wized with-title %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="title">',
+        'after_title'   => '</h4>',
+    ) );
+}
+add_action( 'widgets_init', 'ekomart_register_sidebar' );
+
+
+
+
+add_filter( 'woocommerce_product_review_comment_form_args', function( $comment_form ) {
+
+    // Custom rating field HTML
+    $rating_field = '<p class="comment-form-rating">
+        <label for="rating">' . esc_html__( 'Your rating', 'woocommerce' ) . ' <span class="required">*</span></label>
+        <select name="rating" id="rating" required>
+            <option value="">' . esc_html__( 'Rate&hellip;', 'woocommerce' ) . '</option>
+            <option value="5">' . esc_html__( 'Perfect', 'woocommerce' ) . '</option>
+            <option value="4">' . esc_html__( 'Good', 'woocommerce' ) . '</option>
+            <option value="3">' . esc_html__( 'Average', 'woocommerce' ) . '</option>
+            <option value="2">' . esc_html__( 'Not that bad', 'woocommerce' ) . '</option>
+            <option value="1">' . esc_html__( 'Very poor', 'woocommerce' ) . '</option>
+        </select>
+    </p>';
+
+    // Replace the comment field with rating + review textarea
+    $comment_form['comment_field'] = $rating_field . '<p class="comment-form-comment">
+        <label for="comment">' . esc_html__( 'Your review', 'woocommerce' ) . ' <span class="required">*</span></label>
+        <textarea id="comment" name="comment" cols="45" rows="8" required></textarea>
+    </p>';
+
+    // Remove website field if you want
+    unset( $comment_form['fields']['url'] );
+
+    return $comment_form;
+});
+
+
+
+
+
+remove_action( 'woocommerce_account_view-order_endpoint', 'woocommerce_view_order', 10 );
+
+add_action( 'woocommerce_account_view-order_endpoint', 'my_custom_view_order_content' );
+
+function my_custom_view_order_content() {
+    // Custom PHP + HTML to show order details here
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 

@@ -28,12 +28,12 @@ get_header( 'shop' );
     </div>
 </div>
 
-<div class="container">
+<div class="container section-gap">
   <div class="row align-items-center justify-content-between mb-4">
-    <div class="col-md-6">
+    <div class="col-md-9">
       <?php woocommerce_result_count(); ?>
     </div>
-    <div class="col-md-6 text-md-end">
+    <div class="col-md-3 text-md-end">
       <?php woocommerce_catalog_ordering(); ?>
     </div>
   </div>
